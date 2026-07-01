@@ -12,19 +12,25 @@ export const dataBanners = {
 };
 
 export const hinhAnhVatPham = {
-    "★5 Nguyễn Minh Cường": "/images/cuong.jpg",
-    "★5 Doom Mixing": "/images/doom.webp",
-    "★5 Coăn Bọa": "/images/boan.webp",
-    "★5 Kiều Lương tâm": "/images/kieuluong.png",
-    "★5 Phạm Đức Anh": "/images/ducanh.png",
-    "★5 Ba Hĩu": "/images/bahieu.png", 
-    "★4 Ốp Điện Thoại": "/images/op_dienthoai.png",
-    "★4 Lốp": "/images/lop.png",
-    "★4 Ma Dog": "/images/madog.png",
-    "★4 Khô Gà": "/images/khoga.png",
-    "★3 Fat Nigger": "/images/fat.png",
-    "★3 Warter Melon": "/images/watermelon.png",
-    "★3 Bã Mía": "/images/bamia.png",
-    "★3 Lá Chanh": "/images/lachanh.png",
-    "★3 Nguyễn Minh Phương": "/images/phuong.png"
+    "★5 Nguyễn Minh Cường": "images/cuong.jpg",
+    "★5 Doom Mixing": "images/doom.webp",
+    "★5 Coăn Bọa": "images/boan.webp",
+    "★5 Kiều Lương tâm": "images/kieuluong.png",
+    "★5 Phạm Đức Anh": "images/ducanh.png",
+    "★5 Ba Hĩu": "images/bahieu.png", 
+    "★4 Ốp Điện Thoại": "images/op_dienthoai.png",
+    "★4 Lốp": "images/lop.png",
+    "★4 Ma Dog": "images/madog.png",
+    "★4 Khô Gà": "images/khoga.png",
+    "★3 Fat Nigger": "images/fat.png",
+    "★3 Warter Melon": "images/watermelon.png",
+    "★3 Bã Mía": "images/bamia.png",
+    "★3 Lá Chanh": "images/lachanh.png",
+    "★3 Nguyễn Minh Phương": "images/phuong.png"
 };
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  base: '/GACHA67WEB/', // Dòng này cực kỳ quan trọng
+  // các cấu hình khác của bạn...
+})
