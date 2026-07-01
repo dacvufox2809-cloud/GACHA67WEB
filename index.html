@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAY GEX GACHA - GENSHIN STYLE V7</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+    <h1 id="banner-title">BANNER NGUYỄN MINH CƯỜNG</h1>
+    
+    <div class="banner-tabs" id="banner-tabs-container"></div>
+
+    <div class="pity-counter">
+        Pity 5★: <span id="pity-num" style="color: #ffd700; font-weight: bold;">0</span>/90 
+        <span id="pity-4-num" style="color: #e100ff; margin-left: 10px;">(4★: 0/10)</span>
+        <span id="guarantee-status" style="margin-left: 10px; font-size: 0.9em; font-weight: bold;"></span>
+    </div>
+
+    <div class="button-group">
+        <button id="btn-roll-1">Quay x1</button>
+        <button id="btn-roll-10">Quay x10</button>
+    </div>
+
+    <div class="button-group">
+        <button class="btn-inventory" id="btn-open-inv">Inventory (Phím G)</button>
+    </div>
+
+    <!-- Màn hình hiển thị Gacha -->
+    <div id="screen-gacha" class="gacha-screen">
+        <div id="char-splash-area" class="char-splash-container"></div>
+        <div id="text-result" class="item-result"></div>
+        <button id="btn-skip-gacha" class="btn-close">Skip (Phím E)</button>
+    </div>
+
+    <!-- Màn hình Túi đồ -->
+    <div id="screen-inventory" class="inventory-screen">
+        <div class="inventory-box">
+            <h2 class="inventory-title">KHO VẬT PHẨM ĐÃ QUAY</h2>
+            <div id="inventory-list" class="inventory-list"></div>
+            <div style="text-align: center;">
+                <button class="btn-close" style="opacity: 1; animation: none;" id="btn-close-inv">Close</button>
+                <br>
+                <button class="btn-reset-data" id="btn-reset-data">🗑️ Reset Toàn Bộ Data</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
